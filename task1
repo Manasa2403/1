@@ -1,0 +1,44 @@
+java
+import java.util.Scanner;
+
+public class ResumeBuilderApp {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Resume resume = new Resume();
+
+        System.out.println("Enter your name:");
+        resume.setName(scanner.nextLine());
+
+        System.out.println("Enter your email:");
+        resume.setEmail(scanner.nextLine());
+
+        System.out.println("Enter your phone number:");
+        resume.setPhone(scanner.nextLine());
+
+        System.out.println("Enter your address:");
+        resume.setAddress(scanner.nextLine());
+
+        System.out.println("Enter your career objective/summary:");
+        resume.setObjective(scanner.nextLine());
+
+        System.out.println("Enter your education details:");
+        resume.setEducation(scanner.nextLine());
+
+        System.out.println("Enter your work experience details:");
+        resume.setExperience(scanner.nextLine());
+
+        System.out.println("Enter your skills:");
+        resume.setSkills(scanner.nextLine());
+
+        System.out.println("Enter your projects:");
+        resume.setProjects(scanner.nextLine());
+
+        System.out.println("Enter your references (optional):");
+        resume.setReferences(scanner.nextLine());
+
+        System.out.println("\nResume generated:\n");
+        System.out.println(resume);
+        scanner.close();
+    }
+}
+
